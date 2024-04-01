@@ -1,0 +1,21 @@
+<!--
+This template is called after a user has made a correct guess (equal to the chosen number), telling the user that they
+have guessed the correct number.
+
+Author: Ryan Johnson
+-->
+
+<html>
+    <head>
+        <title>Number Guesser</title>
+    </head>
+    <body>
+        <h1>Welcome to Ryan's Number Guesser!</h1>
+
+        <p>Congratulations! {{.numGuess}} is the correct number.</p>
+
+        <form action="/" method="get">
+            <input type="submit" value="Play Again">
+        </form>
+    </body>
+</html>

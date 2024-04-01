@@ -1,0 +1,22 @@
+<!--
+This template is called after a user has made a guess that is higher than the chosen number, displaying the user's guess
+and the fact that it is too high.
+
+Author: Ryan Johnson
+-->
+
+<html>
+    <head>
+        <title>Number Guesser</title>
+    </head>
+    <body>
+        <h1>Welcome to Ryan's Number Guesser!</h1>
+        <form id="guess-form" action="/guess" method="get">
+            <label for="number-guess">Guess the number: </label>
+            <input type="number" id="number-guess" name="numGuess"></br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <p>You guessed {{.numGuess}}. This is too high.</p>
+    </body>
+</html>

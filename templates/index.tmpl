@@ -1,0 +1,20 @@
+<!--
+This template serves as the home page for the Number Guesser program. It is called whenever a new game is started.
+
+Author: Ryan Johnson
+-->
+
+<html>
+    <head>
+        <title>Number Guesser</title>
+    </head>
+    <body>
+        <h1>Ryan's Number Guesser</h1>
+        <p>A number has been chosen between 0-100.</p>
+        <form id="guess-form" action="/guess" method="get">
+            <label for="number-guess">Guess the number: </label>
+            <input type="number" id="number-guess" name="numGuess"></br>
+            <input type="submit" value="Guess">
+        </form>
+    </body>
+</html>
